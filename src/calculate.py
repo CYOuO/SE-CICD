@@ -15,9 +15,11 @@ def mul_func(a, b):
     # return "123"
     return a * b
 
+
 @app.get("/")
 def home():
-    return {"status": "Online","message": "這是簡易計算機 API"}
+    return {"status": "Online", "message": "這是簡易計算機 API"}
+
 
 @app.get("/add")
 def calculate_add(a: float, b: float):
