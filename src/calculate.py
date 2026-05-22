@@ -22,4 +22,4 @@ def home():
 @app.get("/add")
 def calculate_add(a: float, b: float):
     result = add_func(a, b)
-    return {"operation": "addition", "a":a, "b":b, "result": result}
+    return {"operation": "addition", "a": a, "b": b, "result": result}
